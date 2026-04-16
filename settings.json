@@ -1,0 +1,66 @@
+{
+  "qbittorrent": {
+    "host": "http://192.168.0.205:3117",
+    "username": "admin",
+    "password": "redacted"
+  },
+  "listener": {
+    "host": "192.168.0.205",
+    "port": 7981,
+    "workers": 4
+  },
+  "jobs": {
+    "directory": "D:\\Auto\\upload\\jobs"
+  },
+  "logging": {
+    "path": "C:\\auto\\upload\\webhook_monitor.log",
+    "level": "all",
+    "maxSizeMb": 10
+  },
+  "ssh": {
+    "host": "redacted",
+    "port": 2090,
+    "username": "redacted",
+    "password": "redacted",
+    "connectTimeoutSec": 20
+  },
+  "uploader": {
+    "mode": "full",
+    "localDownloadRootPath": "D:\\Auto\\Download",
+    "remoteContentPath": "/home/seedit4me/torrents/qbittorrent",
+    "remoteTorrentPath": "/home/seedit4me/torrents/torrentfiles",
+    "maxJobSizeGb": 30,
+    "maxRunHours": 12,
+    "continuePastTimeoutJobCount": 1,
+    "scheduledStartTimeLocal": "01:00",
+    "maxConcurrentJobs": 4,
+    "overwriteRemoteExisting": false,
+    "resumePartialUploads": true,
+    "retryAttempts": 3,
+    "retryDelaySec": 5,
+    "pauseMonitorProcessing": false,
+    "pauseSetAtUtc": "",
+    "verifyUploads": true
+  },
+  "uploaderLogging": {
+    "path": "C:\\auto\\upload\\torrent_upload.log",
+    "level": "all",
+    "maxSizeMb": 10
+  },
+  "statusDashboard": {
+    "enabled": true,
+    "host": "192.168.0.205",
+    "port": 7982,
+    "refreshSeconds": 10,
+    "logTailLines": 150,
+    "maxListedJobs": 25
+  },
+  "smtp": {
+    "server": "smtp.redacted.lan",
+    "port": 25,
+    "encryption": "none",
+    "username": "",
+    "password": "",
+    "fromAddress": "redacted@redacted",
+    "to": "redacted@redacted"
+}
